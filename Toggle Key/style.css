@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.switchContainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.toggleButton{
+    background-color: lightgrey;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    position: relative;
+}
+#slider{
+    position: absolute;
+    background-color: gray;
+    width: 50%;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+#slider::after{
+    position: absolute;
+    content: "✖";
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    left: 0.3rem;
+}
+#check:checked + .toggleButton{
+    background-color: rgba(113, 173, 237, 0.589);
+}
+body:has(#check:checked) #slider{
+    background-color: rgb(70, 153, 242);
+    transform: translateX(100%);
+}
+body:has(#check:checked) #slider::after{
+    content: "✔";
+    color:white;
+}
+#check{
+    display: none;
+}
