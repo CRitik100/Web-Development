@@ -91,6 +91,16 @@ a{
 }
 #copyIcon svg{
     width: 2rem;
+    cursor: pointer;
+}
+.social:hover #socialBackground{
+    background-color: #FCF1EF;
+}
+.social:hover #socialBackground svg path{
+    fill: #EC7057;
+}
+.social:hover #socialText{
+    color: #CD8170;
 }
 @media (max-width:1070px){
     .socialContainer{
