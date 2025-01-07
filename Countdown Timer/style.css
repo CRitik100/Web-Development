@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #D7E1F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.mainContainer{
+    background-color: #272727;
+    border-radius: 2rem;
+    width: 50%;
+    height: 50%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    gap: 5rem;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hr,#min, #sec{
+    font-size: 7rem;
+}
+.inputContainer{
+    background-color: #272727;
+    border-radius: 2rem;
+    width: 40%;
+    height: 20%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    gap: 3rem;
+}
+.userInput {
+    display: flex;
+    gap: 2rem;
+}
+.userInput div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.userInput div input{
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+.userInput div label{
+    font-size: 1.3rem;
+}
+button{
+    background-color: #272727;
+    color: white;
+    padding: rem;
+}
+.controlContainer{
+    width: 30%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.controlContainer button{
+    width: 6rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
