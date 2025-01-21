@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #D7E1F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+.mainContainer{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 40%;
+    /* position: absolute;
+    top: 250px; */
+}
+.userInputContainer{
+    display: flex;
+    gap: 2rem;
+}
+.ageInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+label{
+    font-size: x-large;
+}
+input{
+     width: 7rem;
+    border: 3px #DCDBDC solid;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+}
+#calculate{
+    font-size: x-large;
+    padding: 1rem;
+    background-color: #3F7ED4;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+.outputContainer{
+    font-size: 4rem;
+    text-align: center;
+    /* display: none; */
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 2s;
+    
+}
+.outputContainer span{
+    font-weight: bolder;
+    color: #3F7ED4;
+}
